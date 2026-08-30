@@ -101,7 +101,6 @@ def render_slide(slide, current, total):
     if subtitle:
         content_height += 2
 
-    # Calculate padding, but guarantee we don't accidentally exceed the terminal height
     vertical_padding = max(0, (term_rows // 2) - (content_height // 2))
     if vertical_padding + content_height >= term_rows - 1:
         vertical_padding = max(0, term_rows - content_height - 2)
@@ -127,19 +126,14 @@ def render_slide(slide, current, total):
                 sys.stdout.write(char)
                 sys.stdout.flush()
                 time.sleep(0.02)
-            # Notice there is no \n here anymore! This stops the jump.
             sys.stdout.write(reset)
         else:
-            # Removed \n from here too.
             sys.stdout.write(f"{subtitle}{reset}")
 
-    # STRICTLY lock the footer exactly 1 line from the absolute bottom of the window
     footer_row = max(2, term_rows - 1)
-
     prog_bar = render_progress_bar(current, total)
     footer = f" {prog_bar}  |  Slide {current + 1} of {total}  |  [<-] [->]  |  [q] Quit "
 
-    # Teleport cursor straight to the bottom row
     sys.stdout.write(f"\033[{footer_row};1H")
     sys.stdout.write(f"  \033[90m{footer}\033[0m")
     sys.stdout.flush()
@@ -169,14 +163,26 @@ def main():
     current_idx = 0
     total_slides = len(slides)
 
+    fd = sys.stdin.fileno()
+    old_settings = termios.tcgetattr(fd)
+
+    # Disable terminal echo globally so characters aren't printed while rendering
+    no_echo = termios.tcgetattr(fd)
+    no_echo[3] = no_echo[3] & ~termios.ECHO & ~termios.ICANON
+
     sys.stdout.write("\033[?25l")
     clear_screen()
 
     try:
-        # Render the very first slide normally
+        # Apply the no-echo setting for the entire presentation
+        termios.tcsetattr(fd, termios.TCSADRAIN, no_echo)
+
         render_slide(slides[current_idx], current_idx, total_slides)
 
         while True:
+            # FLUSH the input buffer! This throws away any keys typed during the animation.
+            termios.tcflush(fd, termios.TCIFLUSH)
+
             key = get_key()
             prev_idx = current_idx
 
@@ -189,10 +195,11 @@ def main():
             elif key.lower() == 'q' or key == '\x03':
                 break
 
-            # Only re-render if the slide actually changed
             if current_idx != prev_idx:
                 render_slide(slides[current_idx], current_idx, total_slides)
     finally:
+        # Guarantee we restore the user's terminal back to normal when they exit
+        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
         sys.stdout.write("\033[?25h")
         clear_screen()
 

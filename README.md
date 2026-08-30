@@ -2,7 +2,7 @@
 
 ![slitty-header.png](slitty-header.png)
 
-You can run Slitty in any standard terminal (like iTerm2), but it looks especially good in Ghostty since you can easily hide the window borders. 
+You can run Slitty in any standard terminal (like iTerm2), but it looks especially good in Ghostty since you can easily hide the window borders.
 
 Here is a quick command to launch Ghostty as a clean, borderless presentation window:
 
@@ -15,6 +15,7 @@ Here is a quick command to launch Ghostty as a clean, borderless presentation wi
 Slitty reads your presentation from a standard JSON file. The file should contain an array of slide objects. 
 
 Here are the keys you can use for each slide:
+
 * `title`: Standard text title.
 * `banner`: Huge 5x5 block-letter text (looks great, but keep it short so it fits the screen). Use this *instead* of `title`.
 * `subtitle`: Regular text that appears below the title/banner.
