@@ -1,0 +1,22 @@
+[
+    {
+        "banner": "TERMINAL",
+        "banner_color": "cyan",
+        "subtitle": "The Ultimate Minimalist Presentation",
+        "subtitle_color": "yellow",
+        "typewriter": true
+    },
+    {
+        "title": "Standard Title Slide",
+        "title_color": "green",
+        "subtitle": "Standard titles work seamlessly alongside big banners.",
+        "subtitle_color": "white"
+    },
+    {
+        "banner": "THANK YOU",
+        "banner_color": "magenta",
+        "subtitle": "Ready for live demonstrations.",
+        "subtitle_color": "cyan",
+        "typewriter": true
+    }
+]
