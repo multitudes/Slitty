@@ -1,22 +1,68 @@
 [
     {
-        "banner": "TERMINAL",
-        "banner_color": "cyan",
-        "subtitle": "The Ultimate Minimalist Presentation",
+        "title": "The Journey",
+        "title_color": "magenta",
+        "subtitle": "6 Months at 42 Berlin: Vision, Wall, Pivot, Solution.",
+        "subtitle_color": "cyan",
+        "typewriter": true
+    },
+    {
+        "title": "Vision vs Reality",
+        "title_color": "blue",
+        "subtitle": "Great tech and fun games, but no viable path to revenue.",
+        "subtitle_color": "white"
+    },
+    {
+        "banner": "MONTH 3",
+        "banner_color": "red",
+        "subtitle": "The Monetization Wall: We needed a B2B application to survive.",
         "subtitle_color": "yellow",
         "typewriter": true
     },
     {
-        "title": "Standard Title Slide",
+        "banner": "JIFFY SHARE",
+        "banner_color": "cyan",
+        "subtitle": "The Pivot to Simplicity: Navigating the critical moment.",
+        "subtitle_color": "yellow",
+        "typewriter": true
+    },
+    {
+        "title": "OUR STARTUP",
         "title_color": "green",
-        "subtitle": "Standard titles work seamlessly alongside big banners.",
+        "subtitle": "The fastest, easiest, GDPR-friendly way to share slides.",
         "subtitle_color": "white"
     },
     {
-        "banner": "THANK YOU",
+        "title": "The Dilemma",
+        "title_color": "cyan",
+        "subtitle": "Cognitive Load, Dashboard Hassle, and Feature Bloat.",
+        "subtitle_color": "white"
+    },
+    {
+        "banner": "BREAKTHROUGH",
         "banner_color": "magenta",
-        "subtitle": "Ready for live demonstrations.",
+        "subtitle": "We built a spaceship when they simply needed a bicycle.",
+        "subtitle_color": "green",
+        "typewriter": true
+    },
+    {
+        "title": "Simplification",
+        "title_color": "yellow",
+        "subtitle": "Kill Your Darlings. Listen to Friction. Do One Thing Perfectly.",
+        "subtitle_color": "white"
+    },
+    {
+        "banner": "THE PRODUCT",
+        "banner_color": "green",
+        "subtitle": "Zero presenter friction. Instant, GDPR-friendly audience access.",
         "subtitle_color": "cyan",
+        "typewriter": true
+    },
+    {
+        "banner": "QUESTIONS?",
+        "banner_color": "white",
+        "subtitle": "Thank you from Arthur, Omio, and Laurent.",
+        "subtitle_color": "magenta",
         "typewriter": true
     }
 ]
