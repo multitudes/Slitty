@@ -1,39 +1,38 @@
 [
     {
-        "title": "The Journey",
-        "title_color": "magenta",
+        "banner": "Our Journey",
+        "banner_color": "magenta",
         "subtitle": "6 Months at 42 Berlin: Vision, Wall, Pivot, Solution.",
         "subtitle_color": "cyan",
-        "typewriter": true
+        "typewriter": false
+    },
+    {
+        "banner": "gyro.games",
+        "banner_color": "blue",
+        "subtitle": "Interactive party games using smartphone gyroscopes as controllers.",
+        "subtitle_color": "white"
     },
     {
         "title": "Vision vs Reality",
         "title_color": "blue",
-        "subtitle": "Great tech and fun games, but no viable path to revenue.",
+        "subtitle": "Realizing that monetizing a hyper-casual couch gaming platform was difficult",
         "subtitle_color": "white"
     },
     {
-        "banner": "MONTH 3",
-        "banner_color": "red",
-        "subtitle": "The Monetization Wall: We needed a B2B application to survive.",
-        "subtitle_color": "yellow",
-        "typewriter": true
-    },
-    {
-        "banner": "JIFFY SHARE",
-        "banner_color": "cyan",
-        "subtitle": "The Pivot to Simplicity: Navigating the critical moment.",
-        "subtitle_color": "yellow",
-        "typewriter": true
-    },
-    {
-        "title": "OUR STARTUP",
+        "title": "The Pivot",
         "title_color": "green",
-        "subtitle": "The fastest, easiest, GDPR-friendly way to share slides.",
+        "subtitle": "Adapting our core QR tech for the events industry to build interactive keynotes",
         "subtitle_color": "white"
     },
     {
-        "title": "The Dilemma",
+        "banner": "JIFFY",
+        "banner_color": "cyan",
+        "subtitle": "Integrating gyro.games into presenter tools",
+        "subtitle_color": "yellow",
+        "typewriter": false
+    },
+    {
+        "title": "But still we faced a Dilemma",
         "title_color": "cyan",
         "subtitle": "Cognitive Load, Dashboard Hassle, and Feature Bloat.",
         "subtitle_color": "white"
@@ -43,26 +42,33 @@
         "banner_color": "magenta",
         "subtitle": "We built a spaceship when they simply needed a bicycle.",
         "subtitle_color": "green",
-        "typewriter": true
+        "typewriter": false
     },
     {
-        "title": "Simplification",
-        "title_color": "yellow",
+        "banner": "Simplify",
+        "banner_color": "yellow",
         "subtitle": "Kill Your Darlings. Listen to Friction. Do One Thing Perfectly.",
         "subtitle_color": "white"
+    },
+    {
+        "banner": "JIFFY SHARE",
+        "banner_color": "cyan",
+        "subtitle": "The Pivot to Simplicity",
+        "subtitle_color": "yellow",
+        "typewriter": false
     },
     {
         "banner": "THE PRODUCT",
         "banner_color": "green",
         "subtitle": "Zero presenter friction. Instant, GDPR-friendly audience access.",
         "subtitle_color": "cyan",
-        "typewriter": true
+        "typewriter": false
     },
     {
         "banner": "QUESTIONS?",
-        "banner_color": "white",
+        "banner_color": "red",
         "subtitle": "Thank you from Arthur, Omio, and Laurent.",
         "subtitle_color": "magenta",
-        "typewriter": true
+        "typewriter": false
     }
 ]
