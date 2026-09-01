@@ -7,7 +7,7 @@
         "typewriter": false
     },
     {
-        "banner": "gyro.games",
+        "banner": "gyro games",
         "banner_color": "blue",
         "subtitle": "Interactive party games using smartphone gyroscopes as controllers.",
         "subtitle_color": "white"
@@ -29,19 +29,6 @@
         "banner_color": "cyan",
         "subtitle": "Integrating gyro.games into presenter tools",
         "subtitle_color": "yellow",
-        "typewriter": false
-    },
-    {
-        "title": "But still we faced a Dilemma",
-        "title_color": "cyan",
-        "subtitle": "Cognitive Load, Dashboard Hassle, and Feature Bloat.",
-        "subtitle_color": "white"
-    },
-    {
-        "banner": "BREAKTHROUGH",
-        "banner_color": "magenta",
-        "subtitle": "We built a spaceship when they simply needed a bicycle.",
-        "subtitle_color": "green",
         "typewriter": false
     },
     {
